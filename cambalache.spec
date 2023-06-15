@@ -24,17 +24,6 @@ BuildRequires:  pkgconfig(libhandy-1)
 Cambalache is a new RAD tool for Gtk 4 and 3 with a clear MVC design and data model first philosophy.
 This translates to a wide feature coverage with minimal/none 
 
-%package devel
-Summary:        Development files for %{name}
-Group:          System/Libraries
-#Requires:       typelib-1_0-CambalachePrivate-3.0
-#Requires:       typelib-1_0-CambalachePrivate-4.0
-BuildArch:      noarch
-
-%description devel
-Cambalache is a new RAD tool for Gtk 4 and 3 with a clear MVC design and data model first philosophy.
-This translates to a wide feature coverage with minimal/none developer intervention for basic support.
-
 %prep
 %autosetup -p1
 
@@ -45,6 +34,22 @@ This translates to a wide feature coverage with minimal/none developer intervent
 %install
 %meson_install
   
-#find_lang %{name}
+%find_lang %{name}
 
-%files    
+%files -f %{name}.lang
+%{_bindir}/cambalache
+%{python_sitelib}/cambalache/
+%{_libdir}/girepository-1.0/CambalachePrivate-3.0.typelib
+%{_libdir}/girepository-1.0/CambalachePrivate-4.0.typelib
+%{_libdir}/libcambalacheprivate-*.so
+%{_datadir}/applications/ar.xjuan.Cambalache.desktop
+%{_datadir}/cambalache/
+%{_datadir}/gir-1.0/CambalachePrivate-3.0.gir
+%{_datadir}/gir-1.0/CambalachePrivate-4.0.gir
+%{_datadir}/glib-2.0/schemas/ar.xjuan.Cambalache.gschema.xml
+%{_datadir}/icons/hicolor/scalable/apps/ar.xjuan.Cambalache.svg
+%{_datadir}/icons/hicolor/scalable/mimetypes/ar.xjuan.Cambalache.mime.svg
+%{_datadir}/icons/hicolor/symbolic/apps/ar.xjuan.Cambalache-symbolic.svg
+%{_datadir}/metainfo/ar.xjuan.Cambalache.metainfo.xml
+%{_datadir}/mime/packages/ar.xjuan.Cambalache.mime.xml
+
