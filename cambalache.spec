@@ -8,6 +8,7 @@ Source:         https://gitlab.gnome.org/jpu/cambalache/-/archive/%{version}/cam
   
 BuildRequires:  meson
 BuildRequires:  pkgconfig(pygobject-3.0)
+BuildRequires:  python3dist(pygobject)
 BuildRequires:  python3dist(lxml)
 BuildRequires:  pkgconfig(webkit2gtk-4.1)
 BuildRequires:  pkgconfig(gtksourceview-4)
