@@ -22,6 +22,7 @@ BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:  pkgconfig(libhandy-1)
 BuildRequires:  pkgconfig(harfbuzz)
+BuildRequires:  %{_lib}harfbuzz-gir-devel
 
 %description
 Cambalache is a new RAD tool for Gtk 4 and 3 with a clear MVC design and data model first philosophy.
