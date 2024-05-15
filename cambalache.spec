@@ -8,6 +8,7 @@ Source:         https://gitlab.gnome.org/jpu/cambalache/-/archive/%{version}/cam
 
 BuildRequires:  appstream-util  
 BuildRequires:  meson
+BuildRequires:  gettext
 BuildRequires:  pkgconfig(pygobject-3.0)
 BuildRequires:  python3dist(pygobject)
 BuildRequires:  python3dist(lxml)
