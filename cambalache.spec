@@ -1,6 +1,6 @@
 Name:           cambalache
 Version:        0.92.1
-Release:        1
+Release:        2
 Summary:        Is a new RAD tool for Gtk 4 and 3 with a clear MVC design
 License:        LGPL-2.1-only
 URL:            https://gitlab.gnome.org/jpu/cambalache
