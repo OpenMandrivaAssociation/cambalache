@@ -45,9 +45,9 @@ This translates to a wide feature coverage with minimal/none
 %files -f %{name}.lang
 %{_bindir}/cambalache
 %{python_sitelib}/cambalache/
-%{_libdir}/girepository-1.0/CambalachePrivate-3.0.typelib
-%{_libdir}/girepository-1.0/CambalachePrivate-4.0.typelib
-%{_libdir}/libcambalacheprivate-*.so
+#{_libdir}/girepository-1.0/CambalachePrivate-3.0.typelib
+#{_libdir}/girepository-1.0/CambalachePrivate-4.0.typelib
+#{_libdir}/libcambalacheprivate-*.so
 %{_datadir}/applications/ar.xjuan.Cambalache.desktop
 %{_datadir}/cambalache/
 %{_datadir}/gir-1.0/CambalachePrivate-3.0.gir
