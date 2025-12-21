@@ -1,6 +1,6 @@
 Name:           cambalache
-Version:        0.92.1
-Release:        2
+Version:        0.99.8
+Release:        1
 Summary:        Is a new RAD tool for Gtk 4 and 3 with a clear MVC design
 License:        LGPL-2.1-only
 URL:            https://gitlab.gnome.org/jpu/cambalache
@@ -9,6 +9,7 @@ Source:         https://gitlab.gnome.org/jpu/cambalache/-/archive/%{version}/cam
 BuildRequires:  appstream-util  
 BuildRequires:  meson
 BuildRequires:  gettext
+BuildRequires:  pkgconfig(casilda-1.0)
 BuildRequires:  pkgconfig(pygobject-3.0)
 BuildRequires:  python3dist(pygobject)
 BuildRequires:  python3dist(lxml)
