@@ -12,8 +12,8 @@ BuildRequires:  meson
 BuildRequires:  gettext
 BuildRequires:  pkgconfig(casilda-1.0)
 BuildRequires:  pkgconfig(pygobject-3.0)
-BuildRequires:  python3dist(pygobject)
-BuildRequires:  python3dist(lxml)
+BuildRequires:  python%{pyver}dist(pygobject)
+BuildRequires:  python%{pyver}dist(lxml)
 BuildRequires:  pkgconfig(webkit2gtk-4.1)
 BuildRequires:  pkgconfig(webkitgtk-6.0)
 BuildRequires:  pkgconfig(gtksourceview-5)
